@@ -38,11 +38,9 @@ class DragnDrop{
     }
 
     handleFile(file) {
-        if(file.name.split('.')[1] != 'csv'){
-            this.fileName.innerHTML = "Only csv files allowed"
+        if(file.name.split('.')[1] != 'md'){
+            this.fileName.innerHTML = "Only .md files allowed"
             this.file = undefined;
-            console.log('only csv files allowed');
-            console.log(file.name);
             return false
         }
         else {
@@ -117,5 +115,4 @@ downloadBtn.addEventListener("click", async ()=>{
     }
 
 })
-
 
