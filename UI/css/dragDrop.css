@@ -1,0 +1,35 @@
+
+
+.drop-zone {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--light-bg-color);
+    border-radius: 5px;
+    border: 1px solid var(--bg-color);
+    transition: background-color 0.3s, border-color 0.3s;
+    min-width: 200px;
+    height: 150px;
+    text-align: center;
+}
+
+.drop-zone:hover{
+    background-color: var(--bg-color);
+    border-color: var(--alt-color);
+    color: var(--alt-color);
+}
+
+.drop-zone.dragover {
+    background-color: #f0f8ff;
+    border-color: #0056b3;
+    color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}

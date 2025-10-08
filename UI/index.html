@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filey CJE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="component">
+            <div class="logo">
+                <h2>MD to PDF</h2>
+                <small>Convert Your Markdown files for free. Powered by Heli9 Labs 2025</small>
+            </div>
+        </header>
+        <div class="component drag-n-drop">
+            <h4>Upload Your .md file</h4>
+            <div class="drop-zone" id="dropZone">
+                <p>Drag and drop a file here or click to select</p>
+                <input type="file" id="fileInput">
+                <div class="file-name" id="fileName"></div>
+            </div>
+        </div>
+        <div class="component selection">
+            <div class="wrap">
+                <input type="text" id="fileNameInput" namme="fileName" placeholder="filename" readonly>
+            </div>
+        </div>
+        <div class="component btn">
+            <button type="button" id="submit">
+                <div class="text">Convert</div>
+                <i class="icon ri-refresh-line"></i>
+            </button>
+            <button type="button" class="hide" id="download">
+                <div class="text">Download</div>
+                <i class="icon ri-file-download-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="scripts/links.js"></script>
+    <script src="scripts/dragDrop.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+@import url("dragDrop.css");
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root{
+    --bg-color: #2d3250;
+    --light-bg-color: #9d6767;
+    --text-color: #ffffff;
+    --norm-color: #695842;
+    --alt-color: #f9b17a;
+}
+
+.hide{
+    display: none;
+}
+
+*{
+    font-family: 'Quicksand';
+    transition: all .5s;
+}
+
+body{
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app{
+    min-height: 400px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 10px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    border-radius: 5px;
+    color: var(--alt-color);
+}
+
+.app .component{
+    padding: 0 10px;
+    margin: 20px 0;
+    width: auto;
+}
+
+header .logo{
+    color: var(--alt-color);
+    text-align: center;
+}
+
+.component.drag-n-drop{
+    margin-top: 40px;
+}
+
+.component.selection{
+    gap: 10px;
+}
+
+.component.selection select{
+    font-size: 0.65rem;
+    color: #333;
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    min-width: 70px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: var(--light-bg-color);
+}
+
+.component.selection .wrap{
+    display: grid;
+    grid-template-columns: 40% 35%;
+    gap: 10px;
+    width: inherit;
+}
+
+
+.component.selection input{
+    min-width: 50px;
+    padding: 10px 10px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px #222222;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--alt-color);    
+}
+
+select:hover, select:focus{
+    background-color: var(--bg-color);
+    color: var(--alt-color);
+    border: none;
+    outline: none;
+}
+
+
+option:hover, option{
+    background-color: var(--bg-color);
+    border: none;
+    outline: none;
+}
+
+.component.btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.component.btn button{
+    padding: 10px;
+    min-width: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--bg-color);
+    display: grid;
+    grid-template-columns: auto 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.component.btn button:hover{
+    background-color: var(--bg-color);
+    border-color: var(--alt-color);
+    color: var(--alt-color);
+}
+
+.component.btn button:focus{
+    background-color: #3d78e54d;
+    border-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.component.btn button.hide{
+    display: none;
+}
+
+.component.dupes .tag-list{
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.component.dupes .tag-list .tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 5px;
+    background-color: var(--light-bg-color);
+    color: var(--bg-color);
+    min-width: 100%;
+    font-size: 0.75rem;
+    border-radius: 5px;
+}
